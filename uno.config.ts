@@ -1,9 +1,22 @@
-import { defineConfig } from 'unocss';
+import {
+  defineConfig,
+  presetUno,
+  presetAttributify,
+  presetIcons,
+  transformerDirectives,
+  transformerVariantGroup,
+} from 'unocss';
 
 export default defineConfig({
-  content: {
-    filesystem: ['**/*.{html,js,ts,jsx,tsx}'],
-  },
+  presets: [
+    presetUno(),
+    presetAttributify(),
+    presetIcons({
+      scale: 1.2,
+      warn: true,
+    }),
+  ],
+  transformers: [transformerDirectives(), transformerVariantGroup()],
   theme: {
     colors: {
       primary: {
@@ -18,6 +31,11 @@ export default defineConfig({
         800: '#075985',
         900: '#0c4a6e',
       },
+    },
+  },
+  content: {
+    pipeline: {
+      include: ['**/*.{html,js,ts,jsx,tsx,vue,svelte}'],
     },
   },
 });
