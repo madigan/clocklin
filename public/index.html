@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clocklin - Organize Your Calendar Life</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+  </head>
+  <body class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div class="container mx-auto px-4 py-8">
+      <header class="text-center mb-12">
+        <h1 class="text-5xl font-bold text-gray-900 mb-4">Clocklin</h1>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Transform your Google Calendar into meaningful insights. Import, categorize, and visualize
+          how you spend your time.
+        </p>
+      </header>
+
+      <main class="max-w-4xl mx-auto">
+        <section class="bg-white rounded-lg shadow-lg p-8 mb-12">
+          <h2 class="text-3xl font-semibold text-gray-900 mb-6 text-center">How It Works</h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center">
+              <div
+                class="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Import</h3>
+              <p class="text-gray-600">
+                Connect your Google Calendar and import all your events seamlessly.
+              </p>
+            </div>
+            <div class="text-center">
+              <div
+                class="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Categorize</h3>
+              <p class="text-gray-600">
+                Create custom rules to automatically categorize your events by type and purpose.
+              </p>
+            </div>
+            <div class="text-center">
+              <div
+                class="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Visualize</h3>
+              <p class="text-gray-600">
+                See beautiful calendar views showing exactly how much time you devote to each
+                category.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-lg p-8 mb-12">
+          <h2 class="text-3xl font-semibold text-gray-900 mb-6 text-center">Coming Soon</h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="p-6 bg-gray-50 rounded-lg">
+              <h3 class="text-lg font-semibold mb-3">Smart Categorization</h3>
+              <p class="text-gray-600">
+                AI-powered suggestions to automatically categorize your meetings, appointments, and
+                events.
+              </p>
+            </div>
+            <div class="p-6 bg-gray-50 rounded-lg">
+              <h3 class="text-lg font-semibold mb-3">Time Analytics</h3>
+              <p class="text-gray-600">
+                Detailed insights and reports on how you spend your time across different
+                categories.
+              </p>
+            </div>
+            <div class="p-6 bg-gray-50 rounded-lg">
+              <h3 class="text-lg font-semibold mb-3">Goal Tracking</h3>
+              <p class="text-gray-600">
+                Set time allocation goals and track your progress towards better time management.
+              </p>
+            </div>
+            <div class="p-6 bg-gray-50 rounded-lg">
+              <h3 class="text-lg font-semibold mb-3">Export & Share</h3>
+              <p class="text-gray-600">
+                Export your categorized calendar data and share insights with your team.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="text-center">
+          <div class="bg-primary-500 rounded-lg p-8 text-white">
+            <h2 class="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+            <p class="text-xl mb-6 opacity-90">
+              Clocklin is in early development. Check back soon for updates on calendar
+              categorization features.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

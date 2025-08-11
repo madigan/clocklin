@@ -1,0 +1,35 @@
+{
+  "name": "clocklin",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --watch index.ts",
+    "build": "bun build index.ts --outdir ./dist",
+    "start": "bun run index.ts",
+    "lint": "eslint . --ext .ts,.js",
+    "lint:fix": "eslint . --ext .ts,.js --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "css:dev": "unocss 'public/**/*.html' --watch --out-file public/styles.css",
+    "css:build": "unocss 'public/**/*.html' --out-file public/styles.css",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@iconify-json/heroicons": "^1.2.2",
+    "@iconify-json/tabler": "^1.2.22",
+    "@types/bun": "latest",
+    "@typescript-eslint/eslint-plugin": "^8.39.1",
+    "@typescript-eslint/parser": "^8.39.1",
+    "@unocss/cli": "^66.4.2",
+    "eslint": "^9.33.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
+    "prettier": "^3.6.2",
+    "unocss": "^66.4.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,2 @@
+# This directory contains custom slash commands for Claude Code
+# Keep this directory even if empty to prevent GitHub Action copy errors
